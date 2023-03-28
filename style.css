@@ -157,7 +157,7 @@ body {
   width: 100%;
   max-width: 600px;
   height: 360px;
-  background: #3563E9;
+  background: #3563e9;
   position: relative;
   padding: 0 20px;
   border-radius: 10px;
@@ -249,7 +249,7 @@ body {
   background: rgba(163, 177, 193, 0.563);
 }
 .container .sct-transform .up-and-down {
-  padding: 16px 18px;
+  padding: 16px 18px 11px 18px;
   background: var(--words-color);
   border-radius: 10px;
   cursor: pointer;
@@ -283,6 +283,8 @@ body {
 }
 .container .popular-cars-c .popular-cards .card {
   max-width: 300px;
+  max-height: 420px;
+  min-height: 420px;
   padding: 20px;
   border-radius: 10px;
   background: #fff;
@@ -477,12 +479,29 @@ body {
     width: 43vw;
     height: 28vw;
   }
+  .container .ads-sct .header-card1 {
+    width: 43vw;
+    height: 28vw;
+  }
+  .container .popular-cars-c .popular-cards {
+    justify-content: center;
+    gap: 7px;
+  }
+  .container .popular-cars-c .popular-cards .card {
+    padding: 5px;
+    width: 240px;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 1050px) {
   .container {
     padding: 20px;
   }
   .container .ads-sct .header-card {
+    width: 47vw;
+    height: 28vw;
+  }
+  .container .ads-sct .header-card1 {
     width: 47vw;
     height: 28vw;
   }
@@ -507,10 +526,50 @@ body {
   .container .ads-sct .header-card .position-word button {
     font-size: 1.5vw;
   }
+  .container .ads-sct .header-card1 {
+    padding: 5px 16px;
+  }
+  .container .ads-sct .header-card1 .position-word {
+    top: 5px;
+    width: 40vw;
+  }
+  .container .ads-sct .header-card1 .position-word h1 {
+    font-size: 3vw;
+  }
+  .container .ads-sct .header-card1 .position-word p {
+    font-size: 1.8vw;
+  }
+  .container .ads-sct .header-card1 .position-word button {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container .sct-transform {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 730px) {
+  .container .more-car-c .more-cars {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container .ads-sct .header-card .position-word button {
+    display: none;
+  }
+  .container .ads-sct .header-card1 .position-word button {
+    display: none;
+  }
 }
 @media screen and (max-width: 610px) {
   .container footer .up-sct .list-c {
     flex-direction: column;
+  }
+  .container .sct-transform .trans-card .trans-card-name {
+    gap: 5px;
+  }
+  .container .sct-transform .location-c {
+    gap: 10px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -544,14 +603,30 @@ body {
   .container .ads-sct .header-card .position-word button {
     font-size: 1.5vw;
   }
-}
-@media screen and (max-width: 730px) {
-  .container .more-car-c .more-cars {
-    margin-left: 0;
+  .container .ads-sct .header-card1 {
+    padding: 5px 16px;
+    width: 88vw;
+    height: 36vw;
   }
-}
-@media screen and (max-width: 700px) {
-  .container .ads-sct .header-card .position-word button {
+  .container .ads-sct .header-card1 .position-word {
+    top: 5px;
+    width: 70vw;
+  }
+  .container .ads-sct .header-card1 .position-word h1 {
+    font-size: 4.6vw;
+  }
+  .container .ads-sct .header-card1 .position-word p {
+    font-size: 3.2vw;
+  }
+  .container .ads-sct .header-card1 .position-word button {
+    font-size: 1.5vw;
+  }
+  .container .sct-transform {
     display: none;
+  }
+  .container .popular-cars-c .more-car-c .more-cars {
+    margin-left: 20%;
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

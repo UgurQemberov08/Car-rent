@@ -165,11 +165,11 @@ body {
         }
       }
     }
-    .header-card1{
+    .header-card1 {
       width: 100%;
       max-width: 600px;
       height: 360px;
-      background: #3563E9;
+      background: #3563e9;
       position: relative;
       padding: 0 20px;
       border-radius: 10px;
@@ -278,7 +278,7 @@ body {
     }
 
     .up-and-down {
-      padding: 16px 18px;
+      padding: 16px 18px 11px 18px;
       background: var(--words-color);
       border-radius: 10px;
       cursor: pointer;
@@ -317,6 +317,8 @@ body {
 
       .card {
         max-width: 300px;
+        max-height: 420px;
+        min-height: 420px;
         padding: 20px;
         border-radius: 10px;
         background: #fff;
@@ -546,14 +548,28 @@ body {
 
 
 
-
-
-
   @media screen and (max-width: 1350px) {
     .ads-sct {
       .header-card {
         width: 43vw;
         height: 28vw;
+      }
+      .header-card1 {
+        width: 43vw;
+        height: 28vw;
+      }
+    }
+    .popular-cars-c{
+
+      .popular-cards{
+        justify-content: center;
+        gap: 7px;
+
+        .card{
+          padding: 5px;
+          width: 240px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -561,6 +577,10 @@ body {
     padding: 20px;
     .ads-sct {
       .header-card {
+        width: 47vw;
+        height: 28vw;
+      }
+      .header-card1 {
         width: 47vw;
         height: 28vw;
       }
@@ -591,11 +611,65 @@ body {
           }
         }
       }
+      .header-card1 {
+        padding: 5px 16px;
+        .position-word {
+          top: 5px;
+          width: 40vw;
+          h1 {
+            font-size: 3vw;
+          }
+          p {
+            font-size: 1.8vw;
+          }
+          button {
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .sct-transform{
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    .more-car-c .more-cars {
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .ads-sct {
+      .header-card {
+        .position-word {
+          button {
+            display: none;
+          }
+        }
+      }
+      .header-card1 {
+        .position-word {
+          button {
+            display: none;
+          }
+        }
+      }
     }
   }
   @media screen and (max-width: 610px) {
     footer .up-sct .list-c {
       flex-direction: column;
+    }
+    .sct-transform{
+      .trans-card{
+        .trans-card-name{
+          gap: 5px;
+        }
+      }
+      .location-c{
+        gap: 10px ;
+      }
     }
   }
   @media screen and (max-width: 575px) {
@@ -612,12 +686,33 @@ body {
   }
   @media screen and (max-width: 540px) {
     .ads-sct {
-       flex-direction: column;
-       align-items: center;
+      flex-direction: column;
+      align-items: center;
+
       .header-card {
         padding: 5px 16px;
         width: 88vw;
         height: 36vw;
+
+        .position-word {
+          top: 5px;
+          width: 70vw;
+          h1 {
+            font-size: 4.6vw;
+          }
+          p {
+            font-size: 3.2vw;
+          }
+          button {
+            font-size: 1.5vw;
+          }
+        }
+      }
+      .header-card1 {
+        padding: 5px 16px;
+        width: 88vw;
+        height: 36vw;
+
         .position-word {
           top: 5px;
           width: 70vw;
@@ -633,19 +728,16 @@ body {
         }
       }
     }
-  }
-  @media screen and (max-width: 730px) {
-    .more-car-c .more-cars {
-      margin-left: 0;
+    .sct-transform{
+      display: none;
     }
-  }
-  @media screen and (max-width: 700px) {
-    .ads-sct {
-      .header-card {
-        .position-word {
-          button {
-            display: none;
-          }
+
+    .popular-cars-c{
+      .more-car-c{
+        .more-cars{
+          margin-left: 20%;
+          padding: 5px 10px;
+          font-size: 14px;
         }
       }
     }
